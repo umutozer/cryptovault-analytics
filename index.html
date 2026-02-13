@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoVault Analytics | Profesyonel Kripto Portföy Yönetimi</title>
+    <meta name="description" content="Yapay zeka destekli risk analizi ve gerçek zamanlı portföy takibi ile kripto yatırımlarınızı profesyonelce yönetin.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Library for Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">💎</span>
+                <span class="logo-text">CryptoVault</span>
+            </div>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link">Ana Sayfa</a>
+                <a href="#features" class="nav-link">Özellikler</a>
+                <a href="#analysis" class="nav-link">Analiz</a>
+                <a href="#testimonials" class="nav-link">Yorumlar</a>
+                <a href="#cta" class="btn btn-primary nav-cta">Hemen Başla</a>
+            </nav>
+            <button class="mobile-toggle" aria-label="Menüyü Aç">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-right">
+                    <h1 class="hero-title">Kripto Yatırımlarınızı Veriyle Yönetin, <span class="text-gradient">Karmaşayı Yönetin</span></h1>
+                    <p class="hero-subtitle">Tüm cüzdan ve borsa hesaplarınızı tek bir sofistike panelde birleştirin. Kararlarınızı duyguyla değil, derin analizlerle alın.</p>
+                    <div class="hero-btns">
+                        <a href="#" class="btn btn-primary">Ücretsiz Deneyin</a>
+                        <a href="#" class="btn btn-secondary">Demoyu İzle</a>
+                    </div>
+                </div>
+                <div class="hero-visual" data-aos="fade-left">
+                    <div class="chart-container">
+                        <canvas id="heroChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container grid-4">
+                <div class="stat-item" data-aos="zoom-in">
+                    <h3 class="stat-val">$2.4B+</h3>
+                    <p class="stat-label">Yönetilen Varlık</p>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                    <h3 class="stat-val">150k+</h3>
+                    <p class="stat-label">Aktif Kullanıcı</p>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                    <h3 class="stat-val">40+</h3>
+                    <p class="stat-label">Borsa Entegrasyonu</p>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="stat-val">%99.9</h3>
+                    <p class="stat-label">Veri Güvenliği</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Neden CryptoVault?</h2>
+                    <p class="section-desc">Sıradan takip uygulamalarından farklı olarak, kurumsal düzeyde veri işleme kapasitesi sunuyoruz.</p>
+                </div>
+                <div class="grid-3">
+                    <div class="feature-card" data-aos="fade-up">
+                        <div class="feature-icon">📈</div>
+                        <h3>Gelişmiş Metrikler</h3>
+                        <p>Sharpe oranı, volatilite analizi ve drawdown takibi ile profesyonel düzeyde raporlama alarak stratejinizi optimize edin.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Gizlilik Odaklı</h3>
+                        <p>Varlıklarınıza asla dokunmuyoruz. Sadece Read-Only API üzerinden verileri okuyarak size güvenli içgörü sağlıyoruz.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">🤖</div>
+                        <h3>Yapay Zeka Risk Analizi</h3>
+                        <p>Portföyünüzdeki aşırı yoğunlaşma ve piyasa korelasyonu risklerini AI algoritmalarımızla anında tespit edin.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sophisticated Analysis Section -->
+        <section id="analysis" class="sophisticated-analysis">
+            <div class="container">
+                <div class="analysis-wrapper">
+                    <div class="analysis-image" data-aos="slide-right">
+                        <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80" alt="Dashboard Preview" class="rounded-img">
+                    </div>
+                    <div class="analysis-content" data-aos="slide-left">
+                        <span class="badge">Kurumsal Seviye</span>
+                        <h2>Çapraz Borsa Entegrasyonu</h2>
+                        <p>Binance, Coinbase, Kraken ve daha fazlası. Tüm varlıklarınızı parçalar halinde değil, tek bir büyük resim olarak görün.</p>
+                        <ul class="check-list">
+                            <li>Anlık Fiyat Güncellemeleri</li>
+                            <li>Otomatik Vergi Raporlaması</li>
+                            <li>Özelleştirilebilir Alarm Sistemleri</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="testimonial-grid">
+                    <div class="testimonial-card" data-aos="fade-right">
+                        <p class="quote">"CryptoVault sayesinde portföyümdeki gizli riskleri keşfettim. Artık çok daha bilinçli işlem yapıyorum."</p>
+                        <div class="user-info">
+                            <strong>Ahmet Yılmaz</strong>
+                            <span>Kıdemli Trader</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" data-aos="fade-left">
+                        <p class="quote">"Arayüzün sadeliği ve analizlerin derinliği arasındaki denge büyüleyici. Profesyoneller için üretilmiş."</p>
+                        <div class="user-info">
+                            <strong>Zeynep Demir</strong>
+                            <span>Fon Yöneticisi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta" class="cta-section">
+            <div class="container text-center" data-aos="zoom-out">
+                <h2>Finansal Geleceğinizi Şansa Bırakmayın</h2>
+                <p>Hemen ücretsiz hesabınızı oluşturun ve ilk analiz raporunuzu 5 dakika içinde alın.</p>
+                <a href="#" class="btn btn-primary btn-large">Ücretsiz Başla</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <span class="logo-text">CryptoVault</span>
+                    </div>
+                    <p>Veri odaklı kripto yönetim platformu.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Ürün</h4>
+                    <a href="#">Özellikler</a>
+                    <a href="#">Fiyatlandırma</a>
+                    <a href="#">API</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Destek</h4>
+                    <a href="#">Yardım Merkezi</a>
+                    <a href="#">Güvenlik</a>
+                    <a href="#">İletişim</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Yasal</h4>
+                    <a href="#">Kullanım Şartları</a>
+                    <a href="#">Gizlilik Politikası</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> CryptoVault Analytics. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
