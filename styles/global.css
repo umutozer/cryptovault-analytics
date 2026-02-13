@@ -1,0 +1,124 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin-bottom: var(--spacing);
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1rem;
+}
+p {
+  margin-bottom: var(--spacing);
+}
+small {
+  font-size: 0.75rem;
+}
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing);
+}
+.btn {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  border: none;
+  padding: var(--spacing) 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn-primary {
+  background-color: var(--primary-color);
+}
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+.card {
+  background-color: var(--background-color);
+  padding: var(--spacing);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing);
+}
+form {
+  margin-bottom: var(--spacing);
+}
+form input, form textarea, form select {
+  width: 100%;
+  padding: var(--spacing);
+  margin-bottom: var(--spacing);
+  border: none;
+  border-radius: var(--radius);
+}
+.text-center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes scaleIn {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark-background-color);
+    color: var(--light-text-color);
+  }
+  .card {
+    background-color: var(--dark-background-color);
+  }
+}
+@media (max-width: var(--breakpoint-tablet)) {
+  .container {
+    padding: 0 var(--spacing);
+  }
+}
+@media (max-width: var(--breakpoint-mobile)) {
+  .container {
+    padding: 0;
+  }
+}
